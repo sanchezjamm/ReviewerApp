@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageButton
+        android:id="@+id/btn_DefTerms"
+        android:layout_width="190dp"
+        android:layout_height="108dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/defterms"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <ImageButton
+        android:id="@+id/btn_Formulas"
+        android:layout_width="190dp"
+        android:layout_height="108dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/formulas"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <ImageButton
+        android:id="@+id/btn_TestYourself"
+        android:layout_width="379dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844"
+        app:srcCompat="@drawable/testyourself" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
