@@ -17,6 +17,12 @@
             android:name=".DisplayReviewerApp"
             android:exported="false" />
         <activity
+            android:name=".DisplayQuizApp"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayFormula"
+            android:exported="false" />
+        <activity
             android:name="com.example.reviewerappproject.MainActivity"
             android:exported="true">
             <intent-filter>

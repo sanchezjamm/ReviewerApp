@@ -11,7 +11,7 @@ class DisplayReviewerApp : AppCompatActivity(), View.OnClickListener {
     private lateinit var sharedPreferences: SharedPreferences
 
     private var categoryNumber = -1
-    private var quoteString = ""
+    private var termString = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +22,8 @@ class DisplayReviewerApp : AppCompatActivity(), View.OnClickListener {
 
         // Retrieve Data from Intent
         categoryNumber = intent.getIntExtra(CATEGORY,1)
-        quoteString = MainHelper.getReviewerApp(categoryNumber)
-        binding.txtDisplayDefinition.text = quoteString
+        termString = MainHelper.getReviewerApp(categoryNumber)
+        binding.txtDisplayDefinition.text = termString
 
         // Button Binding
         binding.btnShuffledt.setOnClickListener(this)
@@ -33,8 +33,8 @@ class DisplayReviewerApp : AppCompatActivity(), View.OnClickListener {
         when(p0!!.id){
             (R.id.btn_shuffledt) -> {
                 //Randomize it
-                quoteString = MainHelper.getReviewerApp(categoryNumber)
-                binding.txtDisplayDefinition.text = quoteString
+                termString = MainHelper.getReviewerApp(categoryNumber)
+                binding.txtDisplayDefinition.text = termString
             }
 
         }

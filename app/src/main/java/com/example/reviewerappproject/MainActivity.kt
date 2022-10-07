@@ -10,11 +10,10 @@ import android.view.View
 import androidx.core.content.ContextCompat.startActivity
 import com.example.reviewerappproject.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), View.OnClickListener, QuizHelper.QuestionsInterface {
+class MainActivity : AppCompatActivity(), View.OnClickListener{
 
     private lateinit var binding : ActivityMainBinding
     private lateinit var sharedPreferences: SharedPreferences
-    private lateinit var quizHelper: QuizHelper
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,18 +25,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, QuizHelper.Quest
 
         // BUTTON BINDING
         binding.btnDefTerms.setOnClickListener(this)
-        //binding.btnFormula.setOnClickListener(this)
-        //binding.btnQuiz.setOnClickListener(this)
+        binding.btnFormulas.setOnClickListener(this)
+        binding.btnTestYourself.setOnClickListener(this)
 
-
-
-    }
-
-    override fun getQuestion(question: String, answerIndex: Int, answers: List<Pair<Int,String>>) {
-        Log.d(MainActivity::class.simpleName,question)
-        Log.d(MainActivity::class.simpleName,answerIndex.toString())
-        Log.d(MainActivity::class.simpleName,answers.toString())
-    }
+        }
 
     override fun onClick(p0: View?) {
         when (p0!!.id){
@@ -47,18 +38,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, QuizHelper.Quest
                 startActivity(intent)
             }
 
-            //(R.id.btn_Formula) -> {
-            //    val intent = Intent(this, DisplayReviewerApp::class.java)
-            //    intent.putExtra(CATEGORY,2)
-             //   startActivity(intent)
-           // }
+            (R.id.btn_Formulas) -> {
+                val intent = Intent(this, DisplayFormula::class.java)
+                intent.putExtra(CATEGORY,2)
+                startActivity(intent)
+            }
 
-          //  (R.id.btn_Quiz) -> {
-           //     val intent = Intent(this, DisplayReviewerApp::class.java)
-           //     intent.putExtra(CATEGORY,3)
-           //     startActivity(intent)
-           // }
+            (R.id.btn_TestYourself) -> {
+                val intent = Intent(this, DisplayQuizApp::class.java)
+                intent.putExtra(CATEGORY,3)
+                startActivity(intent)
+            }
 
         }
     }
+
+
+
 }
