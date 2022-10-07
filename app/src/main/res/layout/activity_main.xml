@@ -21,18 +21,28 @@
         android:layout_width="190dp"
         android:layout_height="108dp"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Formulas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_TestYourself"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722"
         app:srcCompat="@drawable/defterms"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="450dp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/btn_Formulas"
         android:layout_width="190dp"
         android:layout_height="108dp"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_TestYourself"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722"
         app:srcCompat="@drawable/formulas"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="450dp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/btn_TestYourself"
@@ -44,7 +54,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.844"
-        app:srcCompat="@drawable/testyourself" />
+        app:srcCompat="@drawable/testyourself"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

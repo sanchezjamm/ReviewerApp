@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.core.content.ContextCompat.startActivity
 import com.example.reviewerappproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, QuizHelper.QuestionsInterface {
@@ -25,13 +26,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, QuizHelper.Quest
 
         // BUTTON BINDING
         binding.btnDefTerms.setOnClickListener(this)
-        binding.btnFormula.setOnClickListener(this)
-        binding.btnQuiz.setOnClickListener(this)
+        //binding.btnFormula.setOnClickListener(this)
+        //binding.btnQuiz.setOnClickListener(this)
 
-        quizHelper = QuizHelper(this)
-        binding.btnQuiz.setOnClickListener {
-            quizHelper.getQuestions()
-        }
+
 
     }
 
@@ -49,17 +47,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, QuizHelper.Quest
                 startActivity(intent)
             }
 
-            (R.id.btn_Formula) -> {
-                val intent = Intent(this, DisplayReviewerApp::class.java)
-                intent.putExtra(CATEGORY,2)
-                startActivity(intent)
-            }
+            //(R.id.btn_Formula) -> {
+            //    val intent = Intent(this, DisplayReviewerApp::class.java)
+            //    intent.putExtra(CATEGORY,2)
+             //   startActivity(intent)
+           // }
 
-            (R.id.btn_Quiz) -> {
-                val intent = Intent(this, DisplayReviewerApp::class.java)
-                intent.putExtra(CATEGORY,3)
-                startActivity(intent)
-            }
+          //  (R.id.btn_Quiz) -> {
+           //     val intent = Intent(this, DisplayReviewerApp::class.java)
+           //     intent.putExtra(CATEGORY,3)
+           //     startActivity(intent)
+           // }
 
         }
     }
