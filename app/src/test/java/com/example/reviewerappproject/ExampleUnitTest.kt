@@ -1,4 +1,4 @@
-package com.example.reviewerapplication
+package com.example.reviewerappproject
 
 import org.junit.Test
 

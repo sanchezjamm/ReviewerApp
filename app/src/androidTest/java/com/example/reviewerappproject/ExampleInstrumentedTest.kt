@@ -1,4 +1,4 @@
-package com.example.reviewerapplication
+package com.example.reviewerappproject
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
