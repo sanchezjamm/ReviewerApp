@@ -29,8 +29,8 @@ class DisplayFormula : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0!!.id) {
             (R.id.btn_shuffleform) -> {
-                val diceResult = FormulaHelper.shuffleFormula()
-                displayFormula(diceResult)
+                val formulaResult = FormulaHelper.shuffleFormula()
+                displayFormula(formulaResult)
             }
 
         }
