@@ -39,17 +39,17 @@ class DisplayFormula : AppCompatActivity(), View.OnClickListener {
     private fun displayFormula(intArray: IntArray) {
         for (i in imageViews.indices) {
             val drawableId = when (intArray[i]) {
-                1 -> R.drawable.background
-                2 -> R.drawable.defterms
-                3 -> R.drawable.defterms_bg
-                4 -> R.drawable.formulas
-                5 -> R.drawable.formulas_bg
-                6 -> R.drawable.shuffle
-                7 -> R.drawable.testyourself
-                8 -> R.drawable.shuffle
-                9 -> R.drawable.testyourself
-                10 -> R.drawable.defterms
-                else -> R.drawable.background
+                1 -> R.drawable.slide1
+                2 -> R.drawable.slide2
+                3 -> R.drawable.slide3
+                4 -> R.drawable.slide4
+                5 -> R.drawable.slide5
+                6 -> R.drawable.slide6
+                7 -> R.drawable.slide7
+                8 -> R.drawable.slide8
+                9 -> R.drawable.slide9
+                10 -> R.drawable.slide10
+                else -> R.drawable.slide1
 
             }
             imageViews[i].setImageResource(drawableId)

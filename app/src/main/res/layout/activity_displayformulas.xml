@@ -30,12 +30,15 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/img_show_formula"
-        android:layout_width="322dp"
-        android:layout_height="295dp"
+        android:id="@+id/img_Show_Formula"
+        android:layout_width="294dp"
+        android:layout_height="388dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/formulas" />
+        app:layout_constraintVertical_bias="0.463"
+        app:srcCompat="@drawable/slide1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
