@@ -8,7 +8,6 @@ import com.example.reviewerappproject.databinding.ActivityDisplayformulasBinding
 
 class DisplayFormula : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityDisplayformulasBinding
-    private lateinit var sharedPreferences: SharedPreferences
 
     private val imageViews by lazy {
         arrayListOf(
@@ -20,7 +19,6 @@ class DisplayFormula : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityDisplayformulasBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        sharedPreferences = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE)
         supportActionBar?.hide()
 
         binding.btnShuffleform.setOnClickListener(this)
