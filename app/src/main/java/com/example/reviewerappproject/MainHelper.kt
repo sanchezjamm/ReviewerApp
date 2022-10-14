@@ -5,7 +5,7 @@ import kotlin.random.Random
 class MainHelper {
     companion object {
         fun getCategory ():Int {
-            return Random.nextInt(1,3)
+            return Random.nextInt(1,1)
         }
 
         fun getReviewerApp (category:Int):String {
@@ -16,4 +16,5 @@ class MainHelper {
 
             }
         }
-    }}
+    }
+}
