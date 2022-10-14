@@ -47,15 +47,15 @@ class QuizHelper(context: Context) {
             2, listOf(
                 "A full-wave",
                 "A half-wave",
-                "Both a full-wave and a half-wave",
+                "Both a full-wave\nand a half-wave",
                 "None of the above"
             )
         ),
         Pair(
             3, listOf(
-                "DIAC",
                 "TRIAC",
                 "QUADRAC",
+                "DIAC",
                 "Shockley Diode"
             )
         ),
@@ -77,8 +77,8 @@ class QuizHelper(context: Context) {
         ),
         Pair(
             6, listOf(
-                "An open circuit",
                 "A short circuit",
+                "An open circuit",
                 "Unpredictable",
                 "Undefined"
             )
@@ -93,9 +93,9 @@ class QuizHelper(context: Context) {
         ),
         Pair(
             8, listOf(
-                "is the simplest of semiconductor devices",
-                "has characteristics that closely match those of a simple switch",
-                "is a two-terminal device",
+                "is the simplest of\nsemiconductor devices",
+                "has characteristics\nthat closely match those\nof a simple switch",
+                "is a two-terminal\ndevice",
                 "All of the above"
             )
         ),
@@ -110,8 +110,8 @@ class QuizHelper(context: Context) {
         Pair(
             10, listOf(
                 "A good diode",
-                "An open diode",
                 "A shorted diode",
+                "An open diode",
                 "A defective ohmmeter"
             )
         )
@@ -122,14 +122,14 @@ class QuizHelper(context: Context) {
     private val correctAnswer = mapOf(
         Pair(1, 1),
         Pair(2, 0),
-        Pair(3, 0),
+        Pair(3, 2),
         Pair(4, 1),
         Pair(5, 0),
-        Pair(6, 0),
+        Pair(6, 1),
         Pair(7, 0),
         Pair(8, 3),
         Pair(9, 0),
-        Pair(10, 1)
+        Pair(10, 2)
     )
 
     private fun getRandomNumber(): Int {
