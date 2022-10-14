@@ -18,6 +18,7 @@ class DisplayQuizApp : AppCompatActivity(),QuizHelper.QuestionsInterface, View.O
         super.onCreate(savedInstanceState)
         binding = ActivityDisplayquizBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         quizHelper = QuizHelper(this)
         binding.btnQuiz.setOnClickListener {

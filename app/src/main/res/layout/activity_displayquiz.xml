@@ -5,17 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txt_question"
+    <ImageView
+        android:id="@+id/bgTestYourself"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="Sample Question"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/testyourselfbg" />
+
+    <TextView
+        android:id="@+id/txt_question"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:text="Sample Question"
+        android:textColor="#1A2E38"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,64 +36,88 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="28dp"
         android:orientation="vertical"
+        android:weightSum="6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_question">
 
+
         <Button
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#1A2E38"
             android:text="Button"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="162dp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#1A2E38"
             android:text="Button" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#1A2E38"
             android:text="Button" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#1A2E38"
             android:text="Button" />
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="50dp"
-        android:gravity="center">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/txt_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="16sp"
             android:text="Here is the result of the quiz"
-            android:visibility="invisible"/>
+            android:textAlignment="center"
+            android:textColor="#E8F5F8"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_quiz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Start Quiz" />
+            android:layout_width="170dp"
+            android:layout_height="63dp"
+            android:scaleType="centerCrop"
+            android:text="Start Quiz"
+            app:srcCompat="@drawable/startquiz" />
     </LinearLayout>
+
+
 
 
 
