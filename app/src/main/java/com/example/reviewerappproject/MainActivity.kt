@@ -13,13 +13,11 @@ import com.example.reviewerappproject.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), View.OnClickListener{
 
     private lateinit var binding : ActivityMainBinding
-    private lateinit var sharedPreferences: SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        sharedPreferences = getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)
         setContentView(binding.root)
         supportActionBar?.hide()
 
@@ -52,7 +50,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
 
         }
     }
-
-
-
 }

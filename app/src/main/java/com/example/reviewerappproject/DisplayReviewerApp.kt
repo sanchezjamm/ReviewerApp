@@ -8,8 +8,6 @@ import com.example.reviewerappproject.databinding.ActivityDisplaydeftermsBinding
 
 class DisplayReviewerApp : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding : ActivityDisplaydeftermsBinding
-    private lateinit var sharedPreferences: SharedPreferences
-
     private var categoryNumber = -1
     private var termString = ""
 
@@ -17,7 +15,6 @@ class DisplayReviewerApp : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityDisplaydeftermsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        sharedPreferences = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE)
         supportActionBar?.hide()
 
         // Retrieve Data from Intent
